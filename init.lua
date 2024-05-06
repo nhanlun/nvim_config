@@ -13,6 +13,9 @@ vim.api.nvim_create_autocmd("VimEnter", {
 vim.api.nvim_create_autocmd("BufEnter", {
 	command = "set rnu nu",
 })
+
+vim.o.loglevel = "debug"
+
 ------------------------- lazy ------------------------------
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
