@@ -23,6 +23,10 @@ return {
 				capabilities = capabilities,
 			})
 			lspconfig.clangd.setup({
+				cmd = {
+					"clangd",
+					"--function-arg-placeholders",
+				},
 				capabilities = capabilities,
 			})
 
