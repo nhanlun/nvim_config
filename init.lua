@@ -10,7 +10,7 @@ vim.cmd("set clipboard=unnamedplus")
 vim.g.mapleader = " "
 
 vim.api.nvim_create_autocmd("VimEnter", {
-	command = "set nornu nonu | Neotree toggle",
+	command = "set nornu nonu",
 })
 vim.api.nvim_create_autocmd("BufEnter", {
 	command = "set rnu nu",
